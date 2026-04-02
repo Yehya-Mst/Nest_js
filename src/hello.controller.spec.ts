@@ -1,5 +1,6 @@
 import {Test,TestingModule } from '@nestjs/testing';
 import { HelloController } from './hello.controller';
+
 describe('HelloController', () => {
   let helloController: HelloController; 
   beforeEach(async () => {
@@ -15,5 +16,4 @@ describe('HelloController', () => {
     const result = helloController.hello();
     expect(result).toBe("Hello World!");
   });
-
 });
